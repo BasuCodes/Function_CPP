@@ -1,15 +1,12 @@
-#include <stdio.h>
-
+#include <iostream>
+int add(int x,int y)
+{
+return x+y;
+}
 int main()
 {
-    int a,*b,**c,***d,****e;
-    a=10;
-    b=&a;
-    c=&b;
-    d=&c;
-    e=&d;
-    printf("a=%d b=%u c=%u d=%u e=%u\n",a,b,c,d,e);
-    printf("%d %d %d %d\n",a,a+*b,**c+***d,****e);
-    printf("Hello");
+    int a,b,c;
+    c=add(a,b);
+    cout<<"Sum "<<c<<endl;
     return 0;
 }
